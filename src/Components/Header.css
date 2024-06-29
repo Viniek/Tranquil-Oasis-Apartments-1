@@ -19,12 +19,7 @@
     display:flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    /* padding-top: .31px; */
-    
-    
-    /* height:1rem;
-    width:1rem; */
+    align-items: center;  
     color:white;
 }
 
@@ -45,7 +40,7 @@
 .logo img{
 border-radius: 100%;
 margin-top: .2rem;
-scale:.4;
+scale:.7;
 /* height: 8rem;
 width:9rem; */
 padding-bottom: 2rem;
@@ -76,55 +71,81 @@ padding-bottom: 2rem;
         justify-content: center;  
       
     }
-
+.nav img{
+    scale:.5;
+}
 
 
      }
      @media screen and (max-width:39.375em){
 
         .nav img{
-            
-            display: none;
+            scale: .4;
+            /* display: none; */
         }
-         
+        .nav{
+            gap:1rem;
+        }
+      @media screen and (max-width:37.4375em) {
+        .nav {
+           gap:0.2rem; 
+           
+        }
+       
+      }   
+    }
+    @media screen and (max-width:36em){
+       .nav {
+        gap:.01rem;
+       }
     }
 
  
      @media screen and  ( max-width: 35.9375em){
         .nav{
-        
+           
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         .nav img{
-            display: none;
+            /* display: none; */
+            scale:.4;
         }
      }
-@media screen and (max-width:25.4375em) {
+@media screen and (max-width:30.8125em) {
     .nav{
-        gap:1rem;
-    }    
+    
+        justify-content: center;
+      
+    }  
+    .rightnav{
+        flex-direction: column
+    }
+    .leftnav{
+        flex-direction: column
+    }
 }
 @media screen and (max-width:22.5em) {
     .nav{
        display: flex;
        flex-direction: column;
+      
     }
-    .leftnav{
-        gap: 10rem;
-    }
-    .rightnav{
-        gap:10rem;
-    }  
+   
+    
     
 }
-@media screen and (max-width:17.5625em){
-  .leftnav,.rightnav{
-    gap:4rem;
-  }  
+@media screen and (max-width:22.375em){
+  .nav img{
+    display:none;
 }
+.nav{
+    gap:0rem;
+}
+}
+/* }
 @media screen and (max-width:16.8125em){
  .leftnav,.rightnav{
     gap:5rem;
@@ -136,4 +157,4 @@ padding-bottom: 2rem;
         display:flex;
         flex-direction: column;
     }
-}
+} */
