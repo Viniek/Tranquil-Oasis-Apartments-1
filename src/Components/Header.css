@@ -1,9 +1,10 @@
 .nav{
-    background-color: rgb(34,35,38);     
+    background-color: #222326;     
     display:flex;
     flex-direction: row;
     gap:5rem;
     justify-content: space-around;
+    background-attachment: fixed;
    
     background-attachment: fixed;
     width:100%;
@@ -11,10 +12,17 @@
 .nav a{
     color:white;
     text-decoration: none;
+    
 }
 .nav ul{
     list-style-type: none;
 }
+.nav a:hover{
+    color:#a7894d;
+text-decoration:underline;
+
+}
+
 .phoneicon{
     display:flex;
     flex-direction: row;

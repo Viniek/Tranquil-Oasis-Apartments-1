@@ -1,0 +1,26 @@
+.hero{
+    background-image: url(../../assets/hero1.jpg);
+    height:50rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.hero p{
+    padding-top:25rem;
+    padding-left: 20rem;
+    justify-content: center;
+    font-size: x-large;
+    color:white;
+}
+.schedule_a_visit{
+    background-color:#222326; 
+    margin-top: 10rem;
+    padding:4rem;
+    
+}
+.schedule_a_visit h2{
+    color:white;
+    text-align: center;
+}
