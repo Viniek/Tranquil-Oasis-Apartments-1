@@ -1,8 +1,10 @@
 import React from 'react'
 import './Hero.css'
 import hero1 from '../../assets/hero1.jpg'
+import formphone from '../../assets/formphone.png'
 
 function Hero() {
+     let image= <formphone/>
   return (
     <div>
      <div className='hero'>
@@ -22,13 +24,13 @@ function Hero() {
   </div>
 
     <div className='formbottom'>
-      <input type='int'name="phonenumber" id="phonenumber"placeholder='Phone number eg.+254743209259...'/>      
+      <input type='number'name="phonenumber" id="phonenumber"placeholder={<formphone/>}/>      
       <input type='date'name="Date of visit" id="Date of visit" placeholder='Date of visit'/>
     </div>
 
     <div className='firstname'>
      {/* <textareaplaceholder></textareaplaceholder>="message"</textarea> */}
-     <textarea name="message"  cols="40" rows="30" placeholder='message'></textarea>
+     <textarea name="message"  cols="50" rows="7" placeholder='message'></textarea>
     </div>
     
   </form>

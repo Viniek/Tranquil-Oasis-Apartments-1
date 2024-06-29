@@ -13,6 +13,7 @@
     justify-content: center;
     font-size: x-large;
     color:white;
+    
 }
 .schedule_a_visit{
     background-color:#222326; 
@@ -23,4 +24,42 @@
 .schedule_a_visit h2{
     color:white;
     text-align: center;
+    
+}
+.firstname input{
+ padding: 1rem;
+ width:30rem;
+ align-items: center;
+ background-color: rgb(1, 1, 26);
+ border:1px solid pink;
+ font-weight: bolder;
+ color:#8b8b88;
+}
+.firstname{
+    margin-bottom: 1rem;
+}
+.formtop input{
+    padding: .9rem;
+    background-color: rgb(1, 1, 26);
+    border:1px solid pink;
+    font-weight: bolder;
+    width:15rem;
+    margin-bottom: 1rem;
+    color:#8b8b88;
+}
+.formbottom input{
+   background-color: rgb(1, 1, 26);
+   border:1px solid pink;
+   padding: .9rem;
+   background-color: rgb(1, 1, 26);
+   color:#8b8b88;
+   font-weight: bolder;
+   width:15rem;
+   margin-bottom: 1rem;
+}
+textarea{
+    background-color: rgb(1, 1, 26);
+    border:1px solid pink;
+    color:#8b8b88;
+    padding:1rem;
 }
