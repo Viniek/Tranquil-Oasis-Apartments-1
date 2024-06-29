@@ -8,7 +8,7 @@ import phone_icon from '../assets/phone.png'
 
 function Header() {
   return (
-    <div className='nav'>
+    <section className='nav'>
         
       <div className='phoneicon'>
       {/* <p>"U+260E" +254743209259</p> */}
@@ -26,7 +26,7 @@ function Header() {
   <li><Link to='Contact'>Contact Us</Link></li>
   <li><Link to='Aboutus'>Aboutus</Link></li>
  </ul>
-    </div>
+    </section>
   )
 }
 
