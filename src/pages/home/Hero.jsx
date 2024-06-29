@@ -9,7 +9,11 @@ function Hero() {
     <div>
      <div className='hero'>
      
-    <p className='formhero'><i>Indulge in Daily Elegance</i><br/><b>Find Your Ideal Living Space</b></p>
+    <div className="herocard">
+    <p className='formhero'><i>Indulge in Daily Elegance</i><br/><b>
+      Find Your Ideal Living Space</b>
+    </p>
+    </div>
     
 
 <section className='schedule_a_visit'>

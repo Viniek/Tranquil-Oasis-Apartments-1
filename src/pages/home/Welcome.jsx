@@ -8,6 +8,7 @@ function Welcome() {
         <img src={welcome_image}/>
         <p className='welcome_paragraph'>
             <h2>Welcome to Tranquil Oasis Apartments</h2>
+            <h1><i>Top-Tier Luxurious Estates</i></h1>
             <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, odio corrupti? 
             Voluptas quam architecto placeat! Vitae dolores autem amet, enim pariatur quisquam cumque. 

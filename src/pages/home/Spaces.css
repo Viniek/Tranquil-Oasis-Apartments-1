@@ -1,0 +1,18 @@
+.grey{
+    background-color: grey;
+    color:grey;
+}
+.spaces{
+    background-color: #222326;
+    color:white;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.spaces h2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

@@ -8,11 +8,11 @@
 }
 
 .hero p{
-    padding-top:25rem;
+    /* padding-top:25rem; */
     /* padding-left: 20rem; */
-    justify-content: center;
+    /* justify-content: center;
     font-size: x-large;
-    color:purple;
+    color:purple; */
     
     
 }
@@ -63,13 +63,46 @@ textarea{
     border:1px solid pink;
     color:#8b8b88;
     padding:1rem;
+    width:30rem;
+    
 }
 button{
+    display: flex;
+    justify-content: center;
     background-color: rgb(1, 1, 26);
     color:#8b8b88;
     padding:1rem;
     border:2px pink solid;
-    border-radius: 15%;
+    border-radius: 25px;
+   margin-left: 25%;
+   width: 20rem;
+}
+
+.herocard{
+    background-color: #222326;
+    margin:10rem 0;
+    padding:5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+
+}
+
+.herocard p{
+    padding-bottom: 14rem;
+}
+.formhero{
+    /* background-color: #222326;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    margin-top: 3rem;
+    background-size: cover; */
+    /* margin-bottom: 3rem; */
+    /* padding:.0rem 4rem; */
+    /* height: 10rem; */
 }
 /* responsiveness */
 @media screen and (max-width:47.5625em){
