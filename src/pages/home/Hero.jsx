@@ -8,9 +8,10 @@ function Hero() {
   return (
     <div>
      <div className='hero'>
-     {/* <img src={hero1}/> */}
-    <p><i>Indulge in Daily Elegance</i><br/><b>Find Your Ideal Living Space</b>
-</p>
+     
+    <p className='formhero'><i>Indulge in Daily Elegance</i><br/><b>Find Your Ideal Living Space</b></p>
+    
+
 <div className='schedule_a_visit'>
 <h2>Schedule a Visit</h2>
   <form>
@@ -32,7 +33,7 @@ function Hero() {
      {/* <textareaplaceholder></textareaplaceholder>="message"</textarea> */}
      <textarea name="message"  cols="50" rows="7" placeholder='message'></textarea>
     </div>
-    
+    <button type='submit'>Submit </button>
   </form>
 </div>
     </div>   

@@ -10,7 +10,7 @@
     width:100%;
 }
 .nav a{
-    color:white;
+    color:rgb(211, 202, 202);
     text-decoration: none;
     
 }
@@ -28,7 +28,7 @@ text-decoration:underline;
     flex-direction: row;
     justify-content: center;
     align-items: center;  
-    color:white;
+    color:rgb(245, 227, 227);
 }
 
 

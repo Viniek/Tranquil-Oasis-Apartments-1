@@ -9,10 +9,11 @@
 
 .hero p{
     padding-top:25rem;
-    padding-left: 20rem;
+    /* padding-left: 20rem; */
     justify-content: center;
     font-size: x-large;
-    color:white;
+    color:purple;
+    
     
 }
 .schedule_a_visit{
@@ -62,4 +63,46 @@ textarea{
     border:1px solid pink;
     color:#8b8b88;
     padding:1rem;
+}
+button{
+    background-color: rgb(1, 1, 26);
+    color:#8b8b88;
+    padding:1rem;
+    border:2px pink solid;
+    border-radius: 15%;
+}
+/* responsiveness */
+@media screen and (max-width:47.5625em){
+    textarea{
+        width:20rem;
+    }
+}
+.hero p{
+    padding-top: 15rem;
+}
+@media screen and (max-width:29.625em){
+    .formbottom input{
+        width:10rem;
+    }
+
+.formtop input{
+    width:10rem;
+}
+.firstname input{
+    width: 20rem;
+}
+}
+@media screen and (max-width:22.5em){
+    .firstname input{
+        width:10rem;
+    }
+    .formtop input{
+        width:5rem;
+    }
+    .formbottom input{
+        width:5rem;
+    }
+    textarea{
+        width:10rem;
+    }
 }
