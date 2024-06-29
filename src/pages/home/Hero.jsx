@@ -12,7 +12,7 @@ function Hero() {
     <p className='formhero'><i>Indulge in Daily Elegance</i><br/><b>Find Your Ideal Living Space</b></p>
     
 
-<div className='schedule_a_visit'>
+<section className='schedule_a_visit'>
 <h2>Schedule a Visit</h2>
   <form>
     <div className='firstname'>   
@@ -35,7 +35,7 @@ function Hero() {
     </div>
     <button type='submit'>Submit </button>
   </form>
-</div>
+</section>
     </div>   
     </div>
   )
