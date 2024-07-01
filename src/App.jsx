@@ -18,12 +18,12 @@ function App() {
  <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/Header" element={<Header/>}/>
-          <Route path="/Home" element={<Home />} />
+          {/* <Route path="/Header" element={<Header/>}/> */}
+          <Route path="/" element={<Home />} />
           <Route path="/Properties" element={<Properties />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Aboutus" element={<Aboutus />} />
-          <Route path="/Footer" element={<Footer />} />      
+          {/* <Route path="/Footer" element={<Footer />} />       */}
         </Routes>
         <Footer />
       </BrowserRouter>    

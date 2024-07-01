@@ -83,12 +83,16 @@ button{
     margin:10rem 0;
     padding:5rem;
     display:flex;
+    
     justify-content: center;
     align-items: center;
     color:white;
     border-top-left-radius: 20%;
     border-bottom-right-radius: 20%;
 
+}
+.herocard h2{
+    color:rgb(218, 168, 75);
 }
 
 .herocard p{

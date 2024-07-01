@@ -10,7 +10,8 @@ function Hero() {
      <div className='hero'>
      
     <div className="herocard">
-    <p className='formhero'><i>Indulge in Daily Elegance</i><br/><b>
+    
+    <p className='formhero'>  <h2>Tranquil Oasis Apartments</h2><i>Indulge in Daily Elegance</i><br/><b>
       Find Your Ideal Living Space</b>
     </p>
     </div>

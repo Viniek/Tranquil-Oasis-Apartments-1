@@ -5,7 +5,7 @@ import welcome_image from '../../assets/home_image.webp'
 function Welcome() {
   return (
     <div className='welcome'>
-        <img src={welcome_image}/>
+        <img src={welcome_image} alt='image'/>
         <p className='welcome_paragraph'>
             <h2>Welcome to Tranquil Oasis Apartments</h2>
             <h1><i>Top-Tier Luxurious Estates</i></h1>

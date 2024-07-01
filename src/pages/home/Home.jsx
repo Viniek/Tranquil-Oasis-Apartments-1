@@ -2,6 +2,7 @@ import Hero from "./Hero"
 import './Hero.css'
 import Welcome from "./Welcome"
 import Spaces from "./Spaces"
+import Testimonies from "./Testimonies"
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
     <Hero/>
     <Welcome/>
     <Spaces />
+    <Testimonies/>
   </>
   )
 }

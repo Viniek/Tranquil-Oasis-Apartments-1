@@ -16,7 +16,7 @@ function Header() {
       </div>
       
  <ul className='leftnav'>
-  <li><Link to='Home'>Home</Link></li>
+  <li><Link to='/'>Home</Link></li>
   <li><Link to='Properties'>Properties</Link></li>
   </ul>
   <div className='logo'>
