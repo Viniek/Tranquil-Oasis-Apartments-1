@@ -88,7 +88,10 @@ margin-top:12rem ;
 }
 .dcard{
     width:32%;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
 }
 .dcard h2{
     color:rgb(243, 198, 84);

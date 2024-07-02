@@ -2,3 +2,13 @@
     background-image: url('../../assets/hero1.jpg');
     padding:19rem;
 }
+.booked{
+text-decoration: line-through;
+font-size: 3rem;
+color:red;
+
+}
+.vacant{
+    font-size: 3rem;
+    color:red;  
+}
