@@ -1,14 +1,49 @@
 import React from 'react'
 import './Testimonies.css'
+import jonathan from "../../assets/jonathan.webp"
+import prudence from '../../assets/prudence.webp'
+import hazael from '../../assets/hazael.webp'
+import maureen from '../../assets/maureen.jpeg'
 
 function Testimonies() {
   return (
     <>
 <div className='Testimonies_intro'>
-    <p><h2>Client Testimonials</h2>
+    <p className='paragraph'><h2>Client Testimonials</h2>
 
-Hear from our delighted clients! Discover their experiences and satisfaction with our exceptional service and impressive results. Their glowing reviews highlight the excellence and dedication we bring to every project.</p>
+<i>Hear from our delighted clients! Discover their experiences and satisfactionwith our exceptional service and impressive results. </i></p>
 </div>
+
+
+<section className='testimonies'>
+    {/* testimony1 */}
+    <div className='testimony'>
+<img src={jonathan}alt="muiruri"/>
+<h3>joseph; mbugua</h3>
+<p>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, <br />iste?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, ea.</p>
+    </div>
+       {/* testimony2 */}
+       <div className='testimony'>
+<img src={prudence}alt="shiku"/>
+<p><h3>Prudence Wanjiku</h3>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci,<br /> iste?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, ea.</p>
+    </div>
+
+       {/* testimony3 */}
+       <div className='testimony'>
+<img src={hazael}alt="mungai"/>
+<p><h3>Hazael Mungai</h3>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci,<br />iste?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, ea.</p>
+    </div>
+
+       {/* testimony4*/}
+       <div className='testimony'>
+<img src={maureen}alt="mumbi"/>
+<p><h3>Maureen Mumbi</h3>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, <br />iste?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, ea.</p>
+    </div>
+</section>
     </>
   )
 }

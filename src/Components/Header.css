@@ -10,9 +10,10 @@
     width:100%;
 }
 .nav a{
-    color:rgb(211, 202, 202);
+    color:#cf8e0c;
     text-decoration: none;
-    
+    font-size: larger;
+    font-weight: bolder;
 }
 .nav ul{
     list-style-type: none;
