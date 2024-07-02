@@ -1,11 +1,12 @@
 .hero{
-    background-image: url(../../assets/hero1.jpg);
-    height:50rem;
+    background-image: url(../../assets/hero1crop.jpg);
+    background-size: cover;
+    height:55rem;
     display:flex;
     flex-direction: row;
+   
     justify-content: space-around;
-    
-}
+    }
 
 .hero p{
     /* padding-top:25rem; */

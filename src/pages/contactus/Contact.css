@@ -1,0 +1,19 @@
+.contacthero{
+    background-image: url(../../assets/hero1crop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:15rem;
+}
+.contacticons{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:#222326; 
+    color:bisque;
+} 
+.contacticons p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

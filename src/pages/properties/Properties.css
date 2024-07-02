@@ -1,5 +1,7 @@
 .heroproperties{
-    background-image: url('../../assets/hero1.jpg');
+    background-image: url('../../assets/hero1crop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     padding:19rem;
 }
 .booked{

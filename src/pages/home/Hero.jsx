@@ -6,7 +6,7 @@ import formphone from '../../assets/formphone.png'
 function Hero() {
      let image= <formphone/>
   return (
-    <div>
+    <section className='homehero'>
      <div className='hero'>
      
     <div className="herocard">
@@ -42,7 +42,7 @@ function Hero() {
   </form>
 </section>
     </div>   
-    </div>
+    </section>
   )
 }
 
