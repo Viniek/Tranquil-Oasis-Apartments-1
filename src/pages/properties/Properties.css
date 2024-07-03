@@ -5,12 +5,15 @@
     padding:19rem;
 }
 .booked{
-text-decoration: line-through;
+/* text-decoration: line-through; */
 font-size: 3rem;
 color:red;
+font-weight: 100;
 
 }
 .vacant{
     font-size: 3rem;
-    color:red;  
+    color:red; 
+    font-weight: 100; 
 }
+

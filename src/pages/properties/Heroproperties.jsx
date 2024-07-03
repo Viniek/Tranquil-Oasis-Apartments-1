@@ -50,7 +50,7 @@ function Heroproperties() {
       <img src={one_bedroom} alt="dining"/>
       <h2>Two Bedroom</h2>
       <p>Luxurious and Trendy 2 Bedroom Master En-Suite + DSQ </p>
-       <p className='booked'>vacant</p>  
+       <p className='booked'><strike>vacant</strike></p>  
     </div>
 
        {/* card3*/}
