@@ -10,6 +10,7 @@
     justify-content: space-around;
     background-color:#222326; 
     color:bisque;
+    padding: 3rem;
 } 
 .contacticons img{
     /* scale:.4 */
@@ -20,9 +21,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    border-right: .1px white solid;
+    padding: 3rem 9rem;
 }
-
+.contacticons .p3{
+    border-right: 2px #222326 solid;
+}
 .map iframe{
 width: 100%;
 }

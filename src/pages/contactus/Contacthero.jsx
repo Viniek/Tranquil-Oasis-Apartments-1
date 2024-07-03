@@ -16,7 +16,7 @@ function Contacthero() {
 
 <p><img src={phone} alt='phone'/><br/><h2>Any Question</h2> <br />+254743209259</p>
 <p><img src={email} alt="email"/> <br /><h2>Send a mail </h2><br />njerivictory52@gmail.com</p>
-<p><img src={location} alt="location"/> <br /><h2>Visit Us</h2> <br />Osman Alluh,Nyeri,Kenya,Africa</p>
+<p className='p3'><img src={location} alt="location"/> <br /><h2>Visit Us</h2> <br />Osman Alluh,Nyeri,Kenya,Africa</p>
     </div>
     </>
   )

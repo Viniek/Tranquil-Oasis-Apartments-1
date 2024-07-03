@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Footer.css"
 import { Link } from 'react-router-dom'
-import Header_icon from '../assets/h.jpg'
+import Header_icon from '../assets/logo3.jpg'
 import facebook  from '../assets/facebook.png'
 import instagram from '../assets/instagram.png'
 import twitter from '../assets/twitter.png'
