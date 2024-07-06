@@ -12,7 +12,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem; 
+    margin-top: 5rem; 
+    margin-bottom: 4rem;
+    color:rgb(233, 224, 179);
 }
 .formhero{
     background-color:#222326 ;    

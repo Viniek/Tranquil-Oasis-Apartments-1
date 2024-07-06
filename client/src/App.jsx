@@ -10,6 +10,7 @@ import Aboutus from './pages/aboutus/Aboutus'
 import Footer from './Components/Footer'
 import {BrowserRouter,Routes,Route} from "react-router-dom"
 import Login from './pages/home/login/login'
+import Signin from './pages/home/Signin'
 
 function App() {
  
@@ -18,14 +19,13 @@ function App() {
     <>
  <BrowserRouter>
         <Header />
-        <Routes>
-          {/* <Route path="/Header" element={<Header/>}/> */}
+        <Routes>         
           <Route path='/Login' element={<Login />}/>
+          <Route path='/Signin' element={<Signin />}/>
           <Route path="/" element={<Home />} />
           <Route path="/Properties" element={<Properties />} />
           <Route path="/Contact" element={<Contact />} />
-          <Route path="/Aboutus" element={<Aboutus />} />
-          {/* <Route path="/Footer" element={<Footer />} />       */}
+          <Route path="/Aboutus" element={<Aboutus />} />       
         </Routes>
         <Footer />
       </BrowserRouter>    
