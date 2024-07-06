@@ -9,8 +9,8 @@ import Contact from './pages/contactus/Contact'
 import Aboutus from './pages/aboutus/Aboutus'
 import Footer from './Components/Footer'
 import {BrowserRouter,Routes,Route} from "react-router-dom"
-import Login from './pages/home/login/login'
-import Signin from './pages/home/Signin'
+import Signin from './pages/home/login/signin'
+import Signup from './pages/home/Signup'
 
 function App() {
  
@@ -20,8 +20,8 @@ function App() {
  <BrowserRouter>
         <Header />
         <Routes>         
-          <Route path='/Login' element={<Login />}/>
           <Route path='/Signin' element={<Signin />}/>
+          <Route path='/Signup' element={<Signup />}/>
           <Route path="/" element={<Home />} />
           <Route path="/Properties" element={<Properties />} />
           <Route path="/Contact" element={<Contact />} />

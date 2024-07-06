@@ -1,14 +1,16 @@
 import React from 'react';
-import './login.css';
+import './Signup.css';
 import { useFormik } from 'formik';
 
-function Login() {
+function Signup() {
     const formik = useFormik({
         initialValues: {
           firstname: "",
           lastname: "",
           emailaddress: "",
-          phonenumber: "",         
+          phonenumber: "",
+          dateofvisit: "",
+          message: "" 
         },
         onSubmit: (formState) => {
           console.log("You Submitted:");
@@ -38,7 +40,9 @@ function Login() {
             errors.phonenumber = "Phone number required";
           }
 
-        
+          if (formValues.dateofvisit === "") {
+            errors.dateofvisit = "Date of visit is required"; 
+          }
 
           return errors;
         }
@@ -47,7 +51,7 @@ function Login() {
   return (
    <>
     <section className='schedule_a_visit'>
-      <h2>Log In</h2>
+      <h2>Sign Up</h2>
       <form onSubmit={formik.handleSubmit}>
         <div className='firstname'>
           <input
@@ -62,18 +66,7 @@ function Login() {
           {formik.touched.firstname && formik.errors.firstname && <p className="errorp">{formik.errors.firstname}</p>} 
         </div>
         
-        <div className='formfield'>
-          <input 
-            type='text' 
-            name="lastname" 
-            id="lastname"  
-            placeholder='Last name eg.njeri...' 
-            value={formik.values.lastname} 
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-          />              
-          {formik.touched.lastname && formik.errors.lastname && <p className="errorp">{formik.errors.lastname}</p>} 
-        </div>
+    
 
         <div className='formfield'>
           <input 
@@ -89,19 +82,19 @@ function Login() {
         </div>
         
         <div className='formfield'>
-          <input
-            type='number' 
-            name="phonenumber" 
-            id="phonenumber" 
-            placeholder='Phone number'
-            value={formik.values.phonenumber}  
-            onChange={formik.handleChange} 
+          <input 
+            type='text' 
+            name="password" 
+            id="password"  
+            placeholder='Enter your password..' 
+            value={formik.values.lastname} 
+            onChange={formik.handleChange}
             onBlur={formik.handleBlur}
-          />                 
-          {formik.touched.phonenumber && formik.errors.phonenumber && <p className="errorp">{formik.errors.phonenumber}</p>} 
+          />              
+          {formik.touched.password && formik.errors.password && <p className="errorp">{formik.errors.password}</p>} 
         </div>
 
-     
+        
         
         <button type="submit">Submit</button>
       </form>
@@ -110,4 +103,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Signup;

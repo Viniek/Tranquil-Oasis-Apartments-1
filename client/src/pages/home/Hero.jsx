@@ -2,7 +2,8 @@ import React from 'react';
 import './Hero.css';
 import hero1 from '../../assets/hero1.jpg';
 import formphone from '../../assets/formphone.png';
-import Login from './login/login';
+import Signin from './login/signin';
+import Signup from './Signup';
 import { Link } from 'react-router-dom';
 
 
@@ -26,8 +27,8 @@ function Hero() {
         </div>
 
         <div className='loginbtn'>    
-       <button><Link to="Login">Log in</Link></button>
-       <button><Link to="SignIn">Sign in</Link></button>
+       <button><Link to="Signin">Sign In</Link></button>
+       <button><Link to="Signup">Sign up</Link></button>
        </div>
 
       </section>

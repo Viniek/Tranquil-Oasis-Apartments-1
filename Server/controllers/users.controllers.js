@@ -15,7 +15,7 @@ export const createUser=async(req,res)=>{
                 password:hashedPassword
             }
         })
-        res.json(newUser)
+        res.status(201).json({success:true,message:"hurray!!user created successfuly..."})
     }catch(e){
         res.status(500).json({success:false,message:e.message})
     }
