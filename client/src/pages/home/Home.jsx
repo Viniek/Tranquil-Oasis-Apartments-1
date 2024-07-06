@@ -5,9 +5,11 @@ import Spaces from "./Spaces"
 import Testimonies from "./Testimonies"
 
 
+
 export default function Home() {
   return (
     <>
+   
     <Hero/>
     <Welcome/>
     <Spaces />

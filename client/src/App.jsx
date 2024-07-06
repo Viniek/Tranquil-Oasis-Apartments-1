@@ -9,6 +9,7 @@ import Contact from './pages/contactus/Contact'
 import Aboutus from './pages/aboutus/Aboutus'
 import Footer from './Components/Footer'
 import {BrowserRouter,Routes,Route} from "react-router-dom"
+import Login from './pages/home/login/login'
 
 function App() {
  
@@ -19,6 +20,7 @@ function App() {
         <Header />
         <Routes>
           {/* <Route path="/Header" element={<Header/>}/> */}
+          <Route path='/Login' element={<Login />}/>
           <Route path="/" element={<Home />} />
           <Route path="/Properties" element={<Properties />} />
           <Route path="/Contact" element={<Contact />} />
