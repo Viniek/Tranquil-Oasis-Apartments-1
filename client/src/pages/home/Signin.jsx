@@ -66,18 +66,7 @@ function Login() {
           {formik.touched.firstname && formik.errors.firstname && <p className="errorp">{formik.errors.firstname}</p>} 
         </div>
         
-        <div className='formfield'>
-          <input 
-            type='text' 
-            name="lastname" 
-            id="lastname"  
-            placeholder='Last name eg.njeri...' 
-            value={formik.values.lastname} 
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-          />              
-          {formik.touched.lastname && formik.errors.lastname && <p className="errorp">{formik.errors.lastname}</p>} 
-        </div>
+    
 
         <div className='formfield'>
           <input 
@@ -93,43 +82,19 @@ function Login() {
         </div>
         
         <div className='formfield'>
-          <input
-            type='number' 
-            name="phonenumber" 
-            id="phonenumber" 
-            placeholder='Phone number'
-            value={formik.values.phonenumber}  
-            onChange={formik.handleChange} 
-            onBlur={formik.handleBlur}
-          />                 
-          {formik.touched.phonenumber && formik.errors.phonenumber && <p className="errorp">{formik.errors.phonenumber}</p>} 
-        </div>
-
-        <div className='formfield'>
-          <input
-            type='date' 
-            name="dateofvisit" 
-            id="dateofvisit" 
-            placeholder='Date of visit' 
-            value={formik.values.dateofvisit} 
-            onChange={formik.handleChange} 
-            onBlur={formik.handleBlur}
-          />             
-          {formik.touched.dateofvisit && formik.errors.dateofvisit && <p className="errorp">{formik.errors.dateofvisit}</p>} 
-        </div>
-        
-        <div className='message'>
-          <textarea 
-            name="message" 
-            cols="50" 
-            rows="5" 
-            placeholder='Message'
-            value={formik.values.message} 
+          <input 
+            type='text' 
+            name="password" 
+            id="password"  
+            placeholder='Enter your password..' 
+            value={formik.values.lastname} 
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
-          ></textarea>
-          {formik.touched.message && formik.errors.message && <p className="errorp">{formik.errors.message}</p>}
+          />              
+          {formik.touched.password && formik.errors.password && <p className="errorp">{formik.errors.password}</p>} 
         </div>
+
+        
         
         <button type="submit">Submit</button>
       </form>

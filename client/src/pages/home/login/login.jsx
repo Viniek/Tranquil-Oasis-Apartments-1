@@ -8,9 +8,7 @@ function Login() {
           firstname: "",
           lastname: "",
           emailaddress: "",
-          phonenumber: "",
-          dateofvisit: "",
-          message: "" 
+          phonenumber: "",         
         },
         onSubmit: (formState) => {
           console.log("You Submitted:");
@@ -40,9 +38,7 @@ function Login() {
             errors.phonenumber = "Phone number required";
           }
 
-          if (formValues.dateofvisit === "") {
-            errors.dateofvisit = "Date of visit is required"; 
-          }
+        
 
           return errors;
         }
@@ -105,31 +101,7 @@ function Login() {
           {formik.touched.phonenumber && formik.errors.phonenumber && <p className="errorp">{formik.errors.phonenumber}</p>} 
         </div>
 
-        <div className='formfield'>
-          <input
-            type='date' 
-            name="dateofvisit" 
-            id="dateofvisit" 
-            placeholder='Date of visit' 
-            value={formik.values.dateofvisit} 
-            onChange={formik.handleChange} 
-            onBlur={formik.handleBlur}
-          />             
-          {formik.touched.dateofvisit && formik.errors.dateofvisit && <p className="errorp">{formik.errors.dateofvisit}</p>} 
-        </div>
-        
-        <div className='message'>
-          <textarea 
-            name="message" 
-            cols="50" 
-            rows="5" 
-            placeholder='Message'
-            value={formik.values.message} 
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-          ></textarea>
-          {formik.touched.message && formik.errors.message && <p className="errorp">{formik.errors.message}</p>}
-        </div>
+     
         
         <button type="submit">Submit</button>
       </form>

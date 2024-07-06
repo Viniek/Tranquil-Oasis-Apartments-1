@@ -15,10 +15,16 @@ datasource db {
 model spaces{
   space_id String @id @default(uuid())
   type String @map("type")
-  vacancy Boolean @map ("vacancy")
+  vacancy Boolean @map("vacancy")
   location String @map("location")
   floor Int @map("floor")
- 
-  @@unique([location])
   @@map("spaces_table")
+}
+model user{
+  user_id String @id @default(uuid())
+  firstname String @map("firstname")
+   lastname String @map("lastname")
+  emailaddress String @map("emailaddress") @unique  
+  password String @map("password")
+  @@map("users_table")
 }

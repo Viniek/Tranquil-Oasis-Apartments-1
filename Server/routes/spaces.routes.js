@@ -32,18 +32,19 @@ try{
 });
 // create
 router.post("/", async (req, res) => {
+    
     try {
-        const {space_id, type,vacancy, location, floor } = req.body; 
+        const { vacancy, location, floor,type } = req.body; 
         const newSpace = await prisma.spaces.create({
-            data: {
-               
-               
+            data: {           
+                type:type,
                 vacancy: vacancy,
                 location: location,
                 floor: floor
             }
         });
         res.status(201).json(newSpace);
+        
     } catch (e) {
         res.status(500).json({ success: false, message: e.message });
     }
