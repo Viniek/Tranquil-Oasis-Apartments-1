@@ -2,7 +2,10 @@ import React from 'react';
 import './signIn.css';
 import { useFormik } from 'formik';
 import { Link ,useNavigate } from 'react-router-dom';
+import { url_api } from '../../../../utils/config';
 import { useState } from 'react';
+
+// import axios from 'axios';
 
 function Signin() {
 const[loading,setLoading]=useState(false);
@@ -13,7 +16,7 @@ const  handleSubmit =async(values)=>{
   try{
     setLoading(true);
     setError(false)
-const response =await fetch ('http://localhost:7000/api/users/register',{
+const response =await fetch (`${url_api}/api/users/register`,{
   method:"POST",
   headers:{
     "Content-Type":"application/json",
@@ -24,6 +27,8 @@ const response =await fetch ('http://localhost:7000/api/users/register',{
   }, 
   body: JSON.stringify(values)
 })
+// const response=await axios.post('${apiBase}/api/users/register',values);
+
 const data=await response.json();
 if (data.success  ===true){
   navigate("/Signup")
@@ -81,7 +86,7 @@ if (data.success  ===true){
     <section className='schedule_a_visit'>
       <h2>Sign In</h2>
       <form onSubmit={formik.handleSubmit}>
-        <div className='firstname'>
+        <div className='formfield'>
           <input
             type='text'
             name="firstname"
