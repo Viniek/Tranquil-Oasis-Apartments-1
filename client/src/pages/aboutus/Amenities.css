@@ -86,3 +86,30 @@ amenities {
 .layer:last-child {
   box-shadow: 0 0 0.5em #000d inset, 0 0 5px #000;
 }
+@media screen and (max-width:57.1875em) {
+  .cardcontainer1,.cardcontainer2{
+    flex-direction: column;
+    
+  }
+  .card{
+    width:41rem;
+  }
+}
+@media screen and (max-width:49.1875em) {
+ 
+  .card{
+    width:15rem;
+  }
+}
+@media screen and (max-width:30.6875em) {
+  .card{
+    width:8rem;
+align-items: left;
+  }
+  .card img{
+    display:none;
+  }
+  .amenities{
+    display:none;
+  }
+}

@@ -1,8 +1,7 @@
 
 .vision{
     display: flex;
-    flex-direction: row;
-    /* border:1px grey solid; */
+    flex-direction: row;   
     padding: 3rem;
     margin-top: 3rem;
     box-shadow: 10px 10px 5px 0px rgba(217,35,90,0.75);
@@ -63,3 +62,8 @@
     display: flex;
     flex-direction: row;
 } */
+@media screen and (max-width:31.4375em) {
+    .vision{
+        flex-direction: column;
+    }
+}

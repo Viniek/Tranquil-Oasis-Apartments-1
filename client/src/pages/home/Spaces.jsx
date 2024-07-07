@@ -16,13 +16,7 @@ function Spaces() {
       <div className='ourspacestext'>Available Spaces</div>
     <form className="our_Spaces_form">
           <label htmlFor="our_spaces"></label>
-          <select onChange={(e) => window.location.href = 'dwelling1'}>
-           {/* <option><Link to='dwelling1'>One bedroom</Link></option>
-           <option><Link to='dwelling1'>Two Bedroom</Link></option>
-           <option><Link to='dwelling1'>Three Bedroom</Link></option>
-           <option><Link to='dwelling1'>Four Bedroom</Link></option>
-           <option><Link to='dwelling2'>Five Bedroom</Link></option>
-           <option><Link to='dwelling2'>Six Bedroom</Link></option> */}
+          <select onChange={(e) => window.location.href = 'dwelling1'}>   
             <option>one_bedroom</option>
             <option>two_bedroom</option>
             <option>three_bedroom</option>

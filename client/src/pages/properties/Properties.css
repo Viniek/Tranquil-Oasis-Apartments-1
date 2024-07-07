@@ -22,3 +22,8 @@ padding:2rem 1rem;
 border-top-right-radius: 20px;
 border-bottom-left-radius: 20px;
 }
+@media screen and (max-width:34.8125em){
+    .heroproperties h2{
+        display: none;
+    }
+}
