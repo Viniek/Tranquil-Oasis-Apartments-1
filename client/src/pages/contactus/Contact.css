@@ -92,3 +92,13 @@ textarea{
 .contactform label{
     padding-right:35rem;
 }
+.formcolor{
+    background-color: #222326;
+}
+
+.contacthero h2{ 
+    background-color: #222326;
+    padding:2rem 1rem;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    }

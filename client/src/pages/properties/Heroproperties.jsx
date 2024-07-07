@@ -58,7 +58,7 @@ function Heroproperties() {
       <img src={two_bedroom} className='bd3'/>
       <h2>Three Bedroom</h2>
       <p>Deluxe 3 Bedroom Master En-Suite + DSQ</p>
-      <p className='booked'>vacant</p>
+      <p className='booked'><strike>vacant</strike></p>
     <img src={specialoffer}alt="specialoffer"/>
     
     </div>
@@ -79,7 +79,7 @@ function Heroproperties() {
       <img src={six_bedroom} alt="dining"/>
       <h2>Five Bedroom</h2>
       <p>Lavish 5 Bedroom Master En-Suite + DSQ</p>
-      <p className='vacant'>vacant</p>
+      <p className='vacant'><strike>vacant</strike></p>
 
     </div>
 

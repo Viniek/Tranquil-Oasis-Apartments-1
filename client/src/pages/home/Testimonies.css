@@ -39,3 +39,8 @@ background-color: rgb(182, 169, 169);
 .Testimonies_intro,h2{
     color:rgb(241, 136, 7);
 }
+@media screen and (max-width:39.4375em) {
+.testimony p{
+    display:none;
+}    
+}

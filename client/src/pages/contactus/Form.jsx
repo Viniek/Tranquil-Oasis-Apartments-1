@@ -1,85 +1,111 @@
 import React from 'react';
 import './Contact.css';
-import formvideo from '../../assets/contactformvideo.mp4';
-import formpic from "../../assets/formpic.svg"
 import { useFormik } from 'formik';
 
-function Form() {
-  const formik=useFormik({
-    initialValues:{
-      fullname:"",
-      emailaddress:"",
-      phonenumber:"",
-      date:"",
-      Message:""
-    },
-    onSubmit:(formState)=>{
-      console.log("You Submitted:")
-      console.log(formState)
-    },
-  validate: (formValues)=>{
-    let errors={};
-    if (formValues.fullname==""){
-      errors.fullname="full name is required...";
-    }
-    return errors;
-  }
+function Login() {
+    const formik = useFormik({
+        initialValues: {
+          firstname: "",
+          lastname: "",
+          emailaddress: "",
+          message: "" 
+        },
+        onSubmit: (formState) => {
+          console.log("You Submitted:");
+          console.log(formState);
+        },
+        validate: (formValues) => {
+          let errors = {};
+          if (formValues.firstname === "") {
+            errors.firstname = "First Name required..";
+          } else if (formValues.firstname.length < 3) {
+            errors.firstname = "Must have 3 characters or more...";
+          }
 
+          if (formValues.lastname === "") {
+            errors.lastname = "Last name required...";
+          } else if (formValues.lastname.length < 3) {
+            errors.lastname = "Must have 3 characters or more";
+          }
 
-  })
-  console.log(formik.values)
+          if (formValues.emailaddress === "") {
+            errors.emailaddress = "Email address required"; 
+          } else if (!formValues.emailaddress.includes('@')) {
+            errors.emailaddress = "Enter a valid email...";
+          }
 
+       
+
+          return errors;
+        }
+      });
 
   return (
-    <div className="contactform">
-      <video className="background-video" autoPlay loop muted>
-        <source src={formvideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <section className='cf'>
-      <img src={formpic}/>
-      <div className="contactform">
+   <>
+    <section className='schedule_a_visit'>
+      <div className='formcolor'>
+      <h2>Subscribe to our NewsLetter</h2>
+      <form onSubmit={formik.handleSubmit}>
+        <div className='firstname'>
+          <input
+            type='text'
+            name="firstname"
+            id="firstname"
+            placeholder="First name eg.vee...."
+            value={formik.values.firstname} 
+            onChange={formik.handleChange} 
+            onBlur={formik.handleBlur}
+          />
+          {formik.touched.firstname && formik.errors.firstname && <p className="errorp">{formik.errors.firstname}</p>} 
+        </div>
+        
+        <div className='formfield'>
+          <input 
+            type='text' 
+            name="lastname" 
+            id="lastname"  
+            placeholder='Last name eg.njeri...' 
+            value={formik.values.lastname} 
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+          />              
+          {formik.touched.lastname && formik.errors.lastname && <p className="errorp">{formik.errors.lastname}</p>} 
+        </div>
 
-        <h2>SpeakTo Us</h2>
-        <form onSubmit={formik.handleSubmit}>
-        <label for="fullname">Full Name</label>
-      <input type='text' name="fullname"
-       placeholder="Enter your Full name..."
-        value={formik.values.fullname} 
-        onChange={formik.handleChange}/>
-        {formik.errors.fullname&& <p>{formik.values.fullname}</p>}
-
-
-      <label for="emailaddress">Email Address</label>
-      <input type="text" name="emailaddress"
-       placeholder="Enter your email address..."
-      value={formik.values.emailadress}
-       onChange={formik.handleChange}/>
-
-
-      <label for="phonenumber">Phone Number</label>
-      <input type="number"
-       name="phonenumber"
-       placeholder='Enter your phone number...' 
-      value={formik.values.phonenumber} 
-      onChange={formik.handleChange}/>
-
-
-      <label for="date">Date of Visit</label>
-      <input type="date"
-       name="date"
-       placeholder="Enter date of visit..." 
-      value={formik.values.date}
-       onChange={formik.handleChange}/>
-
-      <label for="messageus">Leave a Message</label>
-      <textarea name="Message" id="textarea" cols="30" rows="10" placeholder='message...' value={formik.values.message} onChange={formik.handleChange}></textarea>
-      <button>Submit</button>
+        <div className='formfield'>
+          <input 
+            type='text'  
+            name="emailaddress" 
+            id="emailaddress" 
+            placeholder='Email address...'
+            value={formik.values.emailaddress}  
+            onChange={formik.handleChange} 
+            onBlur={formik.handleBlur}
+          />           
+          {formik.touched.emailaddress && formik.errors.emailaddress && <p className="errorp">{formik.errors.emailaddress}</p>} 
+        </div>
+        
+        
+        
+        <div className='message'>
+          <textarea 
+            name="message" 
+            cols="50" 
+            rows="5" 
+            placeholder='Message'
+            value={formik.values.message} 
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+          ></textarea>
+          {formik.touched.message && formik.errors.message && <p className="errorp">{formik.errors.message}</p>}
+        </div>
+        
+        <button type="submit">Submit</button>
       </form>
       </div>
-      </section>
-    </div>
+    </section>
+   </>
   );
 }
 
-export default Form;
+export default Login;

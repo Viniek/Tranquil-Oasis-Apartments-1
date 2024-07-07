@@ -52,3 +52,8 @@ line-height: 6rem;
 .fspaces p{
     line-height: 3rem;
 }
+@media screen  and (max-width:47.9375em){
+   .footer{
+    display: none;
+   }
+}

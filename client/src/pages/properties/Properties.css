@@ -16,4 +16,9 @@ font-weight: 100;
     color:red; 
     font-weight: 100; 
 }
-
+.heroproperties h2{ 
+background-color: #222326;
+padding:2rem 1rem;
+border-top-right-radius: 20px;
+border-bottom-left-radius: 20px;
+}

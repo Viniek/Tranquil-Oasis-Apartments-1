@@ -12,12 +12,17 @@ amenities {
   align-items: center;  
   min-height: 100vh;
   background-color: rgb(117, 90, 71);
-}
 
+}
+.amenities h2{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
 .card-container {
   display: flex;
   flex-direction: column;
   perspective: 50em;
+    
 }
 
 .cardcontainer1, .cardcontainer2 {

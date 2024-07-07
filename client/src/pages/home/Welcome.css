@@ -21,3 +21,12 @@
     color:rgb(218, 168, 75);
     
 }
+@media screen and (max-width:51.8125em){
+   .welcome{
+    display: flex;
+    flex-direction: column;
+   } 
+   .welcome_paragraph{
+    display: none;
+   }
+}
