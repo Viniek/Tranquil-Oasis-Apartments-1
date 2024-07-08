@@ -5,6 +5,7 @@ CREATE TABLE "spaces_table" (
     "vacancy" BOOLEAN NOT NULL,
     "location" TEXT NOT NULL,
     "floor" INTEGER NOT NULL,
+    "price" TEXT NOT NULL,
 
     CONSTRAINT "spaces_table_pkey" PRIMARY KEY ("space_id")
 );

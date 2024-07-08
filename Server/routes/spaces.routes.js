@@ -34,13 +34,14 @@ try{
 router.post("/", async (req, res) => {
     
     try {
-        const { vacancy, location, floor,type } = req.body; 
+        const { price,vacancy, location, floor,type } = req.body; 
         const newSpace = await prisma.spaces.create({
             data: {           
                 type:type,
                 vacancy: vacancy,
                 location: location,
-                floor: floor
+                floor: floor,
+                price:price
             }
         });
         res.status(201).json(newSpace);

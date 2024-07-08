@@ -18,6 +18,7 @@ model spaces{
   vacancy Boolean @map("vacancy")
   location String @map("location")
   floor Int @map("floor")
+  price String @map("price")
   @@map("spaces_table")
 }
 model user{
