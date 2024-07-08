@@ -49,63 +49,63 @@ router.post("/", async (req, res) => {
         res.status(500).json({ success: false, message: e.message });
     }
 });
-// update by id
-router.patch("/:id", async(req, res) => {
-    const {space_id, type,vacancy, location, floor } =req.body;
-    const id=req.params.id;
-    try{
-        let updatedSpace;
-            if(type){
-                updatedSpace=await prisma.spaces.update({
-                    where:{id:id},
-                    data: {type:type}
-                })
-            }
+// // update by id
+// router.patch("/:id", async(req, res) => {
+//     const {space_id, type,vacancy, location, floor } =req.body;
+//     const id=req.params.id;
+//     try{
+//         let updatedSpace;
+//             if(type){
+//                 updatedSpace=await prisma.spaces.update({
+//                     where:{id:id},
+//                     data: {type:type}
+//                 })
+//             }
 
 
-            if(vacancy){
-                updatedSpace=await prisma.spaces.update({
-                    where:{id:id},
-                    data: {vacancy:vacancy}
-                })
-            }
+//             if(vacancy){
+//                 updatedSpace=await prisma.spaces.update({
+//                     where:{id:id},
+//                     data: {vacancy:vacancy}
+//                 })
+//             }
 
-            if( location){
-                updatedSpace=await prisma.spaces.update({
-                    where:{id:id},
-                    data: { location: location}
-                })
-            }
+//             if( location){
+//                 updatedSpace=await prisma.spaces.update({
+//                     where:{id:id},
+//                     data: { location: location}
+//                 })
+//             }
 
-            if(  floor){
-                updatedSpace=await prisma.spaces.update({
-                    where:{id:id},
-                    data: {  floor:  floor}
-                })
-            }        
+//             if(  floor){
+//                 updatedSpace=await prisma.spaces.update({
+//                     where:{id:id},
+//                     data: {  floor:  floor}
+//                 })
+//             }        
          
         
-        res.status(200).json({success:true,message:'hurray!!updated successfully'})
+//         res.status(200).json({success:true,message:'hurray!!updated successfully'})
 
-    }catch(error){
-        res.status(500).json({success:false,message:error.message})
-    }
-});
+//     }catch(error){
+//         res.status(500).json({success:false,message:error.message})
+//     }
+// });
    
-// delete by id
-router.delete("/:id", async(req, res) => {
-    const id=req.params.id;
-    try{
-      const deleteSpace=await prisma.spaces.delete(
-      {
-          where:{id:id}
-      }
+// // delete by id
+// router.delete("/:id", async(req, res) => {
+//     const id=req.params.id;
+//     try{
+//       const deleteSpace=await prisma.spaces.delete(
+//       {
+//           where:{id:id}
+//       }
           
-      );
-  res.status(201).json({success:true,message:"hurray!!Space deleted"})
-    }catch(error){
-      res.status(500).json({success:false,message:error.message})
-    }
-  });
+//       );
+//   res.status(201).json({success:true,message:"hurray!!Space deleted"})
+//     }catch(error){
+//       res.status(500).json({success:false,message:error.message})
+//     }
+//   });
 
 export default router;

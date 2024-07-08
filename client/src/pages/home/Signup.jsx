@@ -27,7 +27,7 @@ function Signup() {
       console.log(data);
       if (data.success === true) {
         // changeUserInformation(data.data);
-        navigate("/");
+        navigate("/Properties");
       } else {
         setError(data.message);
       }

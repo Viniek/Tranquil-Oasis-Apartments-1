@@ -11,6 +11,20 @@ color:red;
 font-weight: 100;
 
 }
+.btn button{
+    
+        background-color: red;
+        padding: 1rem;
+        /* height:1rem; */
+        border-radius: 25px;
+        width: 18rem;
+        }
+        .btn a{
+            color:white;
+            text-decoration: none;
+        }
+
+
 .vacant{
     font-size: 3rem;
     color:red; 

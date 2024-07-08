@@ -28,3 +28,4 @@ model user{
   password String @map("password")
   @@map("users_table")
 }
+

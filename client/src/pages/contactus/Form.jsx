@@ -44,7 +44,7 @@ function Login() {
    <>
     <section className='schedule_a_visit'>
       <div className='formcolor'>
-      <h2>Subscribe to our NewsLetter</h2>
+      <h2>Book </h2>
       <form onSubmit={formik.handleSubmit}>
         <div className='firstname'>
           <input
@@ -92,7 +92,7 @@ function Login() {
             name="message" 
             cols="50" 
             rows="5" 
-            placeholder='Message'
+            placeholder='Space you want...'
             value={formik.values.message} 
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}

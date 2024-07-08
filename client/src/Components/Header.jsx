@@ -17,7 +17,7 @@ function Header() {
       
  <ul className='leftnav'>
   <li><Link to='/'>Home</Link></li>
-  <li><Link to='Properties'>Properties</Link></li>
+  {/* <li><Link to='Properties'>Properties</Link></li> */}
   </ul>
   <div className='logo'>
   <img src={Header_icon}alt='a cute tree '/>

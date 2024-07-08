@@ -8,6 +8,7 @@ import four_bedroom from "../../assets/4bedroom.webp"
 import five_bedroom from "../../assets/five_bedroom.jpg"
 import six_bedroom from "../../assets/six_bedroom.jpg"
 import specialoffer from "../../assets/specialoffer.jpg"
+import {Link} from 'react-router-dom'
 
 function Heroproperties() {
   return (
@@ -41,15 +42,15 @@ function Heroproperties() {
     <div className='dcard'>
       <img src={three_bedroom} alt="dining"/>
       <h2>One Bedroom</h2>
-      <p>Cozy 1 Bedroom Master En-Suite + DSQ </p>
-      <p className='vacant'>vacant</p>
+      <p>Cozy 1 Bedroom Master En-Suite + DSQ <br/>$98 </p>
+      <p className='vacant'><strike>vacant</strike></p>
     </div>
 
      {/* card2*/}
      <div className='dcard'>
       <img src={one_bedroom} alt="dining"/>
       <h2>Two Bedroom</h2>
-      <p>Luxurious and Trendy 2 Bedroom Master En-Suite + DSQ </p>
+      <p>Luxurious and Trendy 2 Bedroom Master En-Suite + DSQ <br/> $92</p>
        <p className='booked'><strike>vacant</strike></p>  
     </div>
 
@@ -57,7 +58,7 @@ function Heroproperties() {
        <div className='dcard'>
       <img src={two_bedroom} className='bd3'/>
       <h2>Three Bedroom</h2>
-      <p>Deluxe 3 Bedroom Master En-Suite + DSQ</p>
+      <p>Deluxe 3 Bedroom Master En-Suite + DSQ <br/>$95</p>
       <p className='booked'><strike>vacant</strike></p>
     <img src={specialoffer}alt="specialoffer"/>
     
@@ -70,7 +71,7 @@ function Heroproperties() {
     <div className='dcard'>
       <img src={five_bedroom} alt="dining"/>
       <h2>Four Bedroom</h2>
-      <p>Opulent 4 Bedroom Master En-Suite + DSQ </p>
+      <p>Opulent 4 Bedroom Master En-Suite + DSQ <br/>$98 </p>
        <p className='booked'>vacant</p> 
     </div>
 
@@ -78,7 +79,7 @@ function Heroproperties() {
      <div className='dcard'>
       <img src={six_bedroom} alt="dining"/>
       <h2>Five Bedroom</h2>
-      <p>Lavish 5 Bedroom Master En-Suite + DSQ</p>
+      <p>Lavish 5 Bedroom Master En-Suite + DSQ <br/>$97</p>
       <p className='vacant'><strike>vacant</strike></p>
 
     </div>
@@ -87,11 +88,16 @@ function Heroproperties() {
 <div className='dcard'>
       <img src={five_bedroom} alt="dining"/>
       <h2>Six Bedroom</h2>
-      <p>Palatial 6 Bedroom Master En-Suite + DSQ </p>
+      <p>Palatial 6 Bedroom Master En-Suite + DSQ <br/>$97 </p>
       <p className='booked'>vacant</p>
     </div>
-       
+
+
+       <button className='btn'>
+      <Link to="/">Log out</Link>
+    </button> 
     </section> 
+   
     </>
   )
 }
