@@ -21,5 +21,16 @@ CREATE TABLE "users_table" (
     CONSTRAINT "users_table_pkey" PRIMARY KEY ("user_id")
 );
 
+-- CreateTable
+CREATE TABLE "cart_table" (
+    "cart_id" TEXT NOT NULL,
+    "user_id" TEXT NOT NULL,
+    "items" JSONB NOT NULL,
+    "total" DOUBLE PRECISION NOT NULL,
+    "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "cart_table_pkey" PRIMARY KEY ("cart_id")
+);
+
 -- CreateIndex
 CREATE UNIQUE INDEX "users_table_emailaddress_key" ON "users_table"("emailaddress");

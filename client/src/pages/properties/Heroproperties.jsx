@@ -119,4 +119,4 @@ function Heroproperties() {
   );
 }
 
-export default Heroproperties;
+export default Heroproperties

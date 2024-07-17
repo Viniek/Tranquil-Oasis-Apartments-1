@@ -29,4 +29,17 @@ model user{
   password String @map("password")
   @@map("users_table")
 }
+model Cart {
+  id       String  @id @default(uuid())
+  user_id  String  
+  type     String @map("type")
+  price    Float @map("price")
+  vacancy  Boolean @map("vacancy")
+  location String @map("location")
+  floor    Int @map("floor")
+  space_id String
+
+  @@map("cart_table")
+}
+
 
